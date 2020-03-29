@@ -238,7 +238,11 @@ int main()
 	}
 	for(i=0; i< n;i++)
 	{
-		if(priority[i]>=1 && priority[i]<=5)
+		if(priority[i]<0)
+		{
+                    printf("given input not accepted")
+		}
+		else if(priority[i]>=1 && priority[i]<=5)
 		{
 			printf("process%d belongs to queue1 \n",i+1);
 			at1[j]=at[i];
